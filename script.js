@@ -24,11 +24,17 @@ tl.from("#menu",{
     duration:1,
     stagger:0.5
 }) 
-tl.from(".nl img , .nr",{
+tl.from(".nl img",{
     y:-100,
     duration:1,
     delay:0.5,
     opacity:0,
+    stagger:0.5
+})
+tl.from("#nr",{
+    opacity:0,
+    duration:1,
+    delay:0.5,
     stagger:0.5
 })
 tl.to("nav",{
@@ -39,14 +45,13 @@ tl.from("#ab-l",{
     opacity:0,
     duration:1,
     delay:0.8,
-    stagger:0.5
+    stagger:0.5,
 }) 
 tl.from("#ab-r",{
     x:100,
     opacity:0,
     duration:1,
     delay:0.1,
-    stagger:0.5
 }) 
 
 gsap.from(".ab-l,.ab-r",{
